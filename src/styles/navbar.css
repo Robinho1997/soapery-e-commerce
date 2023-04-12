@@ -1,0 +1,42 @@
+ul,
+li {
+    margin-left: 0;
+    padding: 0;
+}
+
+li {
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    z-index: 1;
+    color: #212121;
+  }
+  
+
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.first-ul {
+    justify-content: space-between;
+    padding-inline: 20px;
+
+}
+
+.second-ul {
+    justify-content: center;
+
+    gap: 50px;
+    font-weight: bold;
+}
