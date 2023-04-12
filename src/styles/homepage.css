@@ -1,0 +1,34 @@
+.product-showcase-div {
+    display: grid;
+    grid-template-columns: 50% 50%;
+   height: 70vh;
+   margin-top: 0;
+   padding: 0px;
+
+}
+
+.product-showcase-div p {
+    margin: 0;
+}
+
+.text {
+    text-align: center;
+    align-self: center;
+    font-weight: 500;
+    padding-inline:10%;
+  color: #C1A878;
+  line-height: 40px;
+  text-shadow: 1px 1px 1px rgba(0,0,0,.004);
+  letter-spacing: 0.1em;
+  font-size: 24px;
+    
+}
+
+
+.background-container {
+    background: url("https://images.unsplash.com/photo-1643123158251-3a66f53a4635?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
