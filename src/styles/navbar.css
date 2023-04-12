@@ -30,13 +30,13 @@ li {
 
 .first-ul {
     justify-content: space-between;
-    padding-inline: 20px;
-
+    padding: 20px;
+  
 }
 
 .second-ul {
-    justify-content: center;
-
+    justify-content: center;  
     gap: 50px;
     font-weight: bold;
+    /** text-shadow: 2px 4px 3px rgba(0,0,0,0.3); **/
 }
