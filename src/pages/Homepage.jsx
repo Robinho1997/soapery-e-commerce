@@ -5,7 +5,7 @@ import productData from "../data/productData";
 import { nanoid } from "nanoid";
 import "../styles/homepage.css";
 import Footer from "../components/Footer";
-
+import Navbar from "../components/Navbar";
 function Homepage() {
   const ProductElements = () => {
     let newArr = [];
@@ -25,6 +25,7 @@ function Homepage() {
   };
   return (
     <div>
+     <Navbar/>
       <Slideshow />
       <h1 className="header-products">Bestseller</h1>
       <div className="product-grid">
