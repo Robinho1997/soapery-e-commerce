@@ -9,11 +9,8 @@ import Soapery from "./pages/Soapery";
 function App() {
   return (
     <div className="App">
-     
-   
-
       <Routes>
-      <Route path="/" element={<Homepage/>}></Route>
+        <Route path="/" element={<Homepage />}></Route>
         <Route path="/shop" element={<Shop />}></Route>
         <Route path="/about" element={<About />}></Route>
         <Route path="/stores" element={<Stores />}></Route>
