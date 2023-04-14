@@ -10,9 +10,17 @@ function ContextProvider(props) {
         setCartItems(prev => [...prev,item])
         setToggle(!toggle)
     }
+    
+    function removeFromCart(index) {
+        setCartItems(prevItems => {
+            const newCartItems = [...prevItems]
+            newCartItems.splice(index,1)
+            return newCartItems
+        })
+    }
 
     return (
-        <Context.Provider value={{cartItems,setCartItems,addToCart, toggle, setToggle}}>
+        <Context.Provider value={{cartItems,setCartItems,addToCart, removeFromCart, toggle, setToggle}}>
             {props.children}
         </Context.Provider>
     )

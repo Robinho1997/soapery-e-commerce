@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
+import { Context } from "../Context";
 
 function CartItemComponent(props) {
+    const {removeFromCart,cartItems,setCartItems} = useContext(Context)
     return(
         <div className="cart-item-div">
             <p>{props.name}</p>
@@ -9,7 +11,7 @@ function CartItemComponent(props) {
                 <div className="right-side-cart-item">
                     <p>{props.price} €</p>
                     <p>{props.info}</p>
-                    <button className="remove-btn">ENTFERNEN</button>
+                    <button onClick={()=>removeFromCart(props.index)} className="remove-btn">ENTFERNEN</button>
                 </div>
             </div>
         </div>

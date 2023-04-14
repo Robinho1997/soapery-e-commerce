@@ -6,9 +6,17 @@ import { Context } from "../Context";
 import CartItemComponent from "./CartItemComponent";
 // addtoCart soll toggle auf wahr stellen
 function Navbar() {
-  const { cartItems,toggle,setToggle } = useContext(Context);
-
+  const { cartItems,toggle,setToggle } = useContext(Context)
   const cartRef = useRef(null);
+// price eigenschaft von allen objekten im cartItems Array addieren
+
+function calculateTotalCost() {
+  let totalPrice = 0
+  cartItems.map(item => {
+    totalPrice += item.price
+  })
+  return totalPrice
+}
 
   const handleCartClick = (event) => {
     if (cartRef.current && !cartRef.current.contains(event.target)) {
@@ -34,7 +42,7 @@ function Navbar() {
       document.body.style.overflow = "";
     }
   }, [toggle]);
-  const CartElements = cartItems.map((item) => {
+  const CartElements = cartItems.map((item,index) => {
     return (
       <CartItemComponent
         key={nanoid()}
@@ -42,6 +50,8 @@ function Navbar() {
         img={item.img}
         price={item.price}
         info={item.info}
+        id={nanoid()}
+        index={index}
       />
     );
   });
@@ -84,7 +94,7 @@ function Navbar() {
             {CartElements}
             <div className="bottom">
             <p>Summe</p>
-            <p>49,50 EUR</p>
+            <p>{calculateTotalCost()}€</p>
             <p>Versandkosten & Die landesüblichen MwSt. wird abgeführt</p>
             <p>
               Glückwunsch, deine Bestellung ist in Deutschland & Österreich{" "}
