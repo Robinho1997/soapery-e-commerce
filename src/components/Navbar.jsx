@@ -1,12 +1,13 @@
 import React, { useContext, useState, useRef, useEffect } from "react";
 import "../styles/navbar.css";
+import { nanoid } from "nanoid";
 import { Link } from "react-router-dom";
 import { Context } from "../Context";
 import CartItemComponent from "./CartItemComponent";
-
+// addtoCart soll toggle auf wahr stellen
 function Navbar() {
-  const { cartItems } = useContext(Context);
-  const [toggle, setToggle] = useState(false);
+  const { cartItems,toggle,setToggle } = useContext(Context);
+
   const cartRef = useRef(null);
 
   const handleCartClick = (event) => {
@@ -36,6 +37,7 @@ function Navbar() {
   const CartElements = cartItems.map((item) => {
     return (
       <CartItemComponent
+        key={nanoid()}
         name={item.name}
         img={item.img}
         price={item.price}

@@ -91,7 +91,7 @@ a:hover {
     width: 400px;
     background-color: black;
     color: white;
-    transition: ease-in-out  1.3s ;
+    transition: ease-in-out  0.5s ;
     padding: 20px;
     z-index: 1000;
   
