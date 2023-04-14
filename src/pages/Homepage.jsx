@@ -4,6 +4,7 @@ import Product from "../components/Product";
 import productData from "../data/productData";
 import { nanoid } from "nanoid";
 import "../styles/homepage.css";
+import "../styles/footer.css";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 

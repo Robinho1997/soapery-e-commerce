@@ -19,7 +19,7 @@ function Navbar() {
         <li><Link to={"/shop"}>SHOP</Link></li>
         <li><Link to={"/about"}>ABOUT</Link></li>
         <li><Link to={"/stores"}>STORES</Link></li>
-        <li><Link to={"/soapery"}>#SOAPERY</Link></li>
+        <li><Link to={"/"}>#SOAPERY</Link></li>
       </ul>
     </nav>
   );

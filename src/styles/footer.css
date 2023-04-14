@@ -1,0 +1,60 @@
+/**
+*! FOOTER STYLES HERE
+**/
+
+
+
+.main-footer {
+    display: flex;
+    justify-content: space-evenly;
+    padding-block: 40px;
+    background-color: #F7F7F7;
+    color: #212121;
+}
+
+.footer-center-bottom {
+    text-align: center;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 1.6px;
+}
+
+.header-footer {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    letter-spacing: 1.5px;
+
+}
+
+.a {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 1.6px;
+}
+
+.payment-logos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.payment-logos img {
+    width: 60px;
+}
+
+.pair-logos {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.dhl-logo {
+    width: 100px;
+    margin-top: 15px;
+}
