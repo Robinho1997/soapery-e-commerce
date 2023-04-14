@@ -20,7 +20,7 @@ function Homepage() {
           img={product.img}
           name={product.name}
           price={product.price}
-          description={product.description}
+          info={product.info}
         />
       );
     }

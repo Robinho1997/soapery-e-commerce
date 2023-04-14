@@ -4,7 +4,7 @@ import { Context } from "../Context";
 
 function Product(props) {
   const { cartItems, setCartItems, addToCart } = useContext(Context);
-  console.log(cartItems)
+ 
   return (
     <div className="product">
       <img className="product-img" src={props.img} />
@@ -13,7 +13,7 @@ function Product(props) {
           <p className="product-name">{props.name}</p>
           <p className="product-price">{props.price} €</p>
         </div>
-        <p className="product-description">{props.description}</p>
+        <p className="product-description">{props.info}</p>
         <button className="product-btn" onClick={() => addToCart(props.object)}>
           IN DEN EINKAUFSKORB
         </button>

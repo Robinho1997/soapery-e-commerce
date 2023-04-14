@@ -60,6 +60,7 @@
     margin-top: 16px;
     padding-block: 8px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .header-products {

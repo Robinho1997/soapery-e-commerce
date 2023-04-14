@@ -55,3 +55,101 @@ a:hover {
     font-weight: bold;
     /** text-shadow: 2px 4px 3px rgba(0,0,0,0.3); **/
 }
+
+.number-cart-items {
+    position: absolute;
+    color: black;
+    margin-left:-24.3px;
+    margin-top: 16px;
+    font-size: 13px;
+    text-shadow: 1px 1px 12px black;
+    text-align: center;
+}
+
+.material-symbols-outlined {
+    font-size: 40px;
+
+}
+
+.cart {
+    cursor: pointer;
+}
+
+
+
+/**
+*! toggled Sidebar Styles here
+**/
+
+  
+.sidebar-cart-div {
+    overflow-y: scroll;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 400px;
+    background-color: black;
+    color: white;
+    transition: ease-in-out  1.3s ;
+    padding: 20px;
+    z-index: 1000;
+  
+  }
+  
+  .sidebar-cart-div.show {
+    right: 0;
+   
+  }
+  
+  .empty-cart-message {
+    padding-left: 30px;
+    margin-top: 50px;
+  }
+
+  .empty-cart-message a {
+    color: white;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+  }
+.header-cart {
+    border-bottom: 2px solid;
+    padding-bottom: 10px;
+}
+
+.cart-item-flex {
+    display: flex;
+    justify-content: flex-start;
+    gap: 12px;
+}
+
+  .cart-item-img {
+    width: 40%;
+    height: 200px;
+  }
+
+.remove-btn {
+    background-color: inherit;
+    border: none;
+    color: white;
+    text-decoration: 1.4px underline;
+    text-underline-offset: 5px;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.bottom {
+    border-top: 2px solid white;
+    margin-top: 50px;
+    padding-bottom: 50px;
+  }
+
+.checkout-btn {
+    background-color: white;
+    font-family: inherit;
+    width: 100%;
+    cursor: pointer;
+    padding: 8px;
+    margin: 0 auto;
+    text-align: center;
+}
