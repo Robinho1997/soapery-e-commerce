@@ -8,7 +8,7 @@ function Navbar() {
       <ul className="first-ul">
         <li>DE/EN</li>
         <li>
-          <h1>SOAPERY</h1>
+          <h1 className="navbar-header">SOAPERY</h1>
         </li>
         <li className="cart">
           <span className="material-symbols-outlined">local_mall</span>

@@ -16,6 +16,7 @@ function Homepage() {
       newArr.push(
         <Product
           key={nanoid()}
+          object={product}
           img={product.img}
           name={product.name}
           price={product.price}

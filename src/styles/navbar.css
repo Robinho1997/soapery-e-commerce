@@ -8,6 +8,7 @@ li {
     font-size: 18px;
     line-height: 20px;
     letter-spacing: 1px;
+    font-weight: bold;
 }
 
 a {
@@ -28,7 +29,13 @@ a:hover {
     z-index: 1;
     color: #212121;
   }
-  
+
+  .navbar-header {
+    font-size: 37px;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+ 
+  }
 
 
 .navbar ul {
