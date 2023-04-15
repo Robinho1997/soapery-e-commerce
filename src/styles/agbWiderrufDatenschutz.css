@@ -1,4 +1,4 @@
-.agb-header , .widerruf-header{
+.agb-header , .widerruf-header , .datenschutz-header{
         text-align: center;
         margin-top: 150px;
         font-size: 32px;
@@ -17,13 +17,13 @@
     font-size: 15px;
 }
 
-.agb , .widerruf {
+.agb , .widerruf , .datenschutz {
     margin-inline: 10%;
     margin-block: 60px;
   
 }
 
-.agb h2 , .widerruf h2 {
+.agb h2 , .widerruf h2 , .datenschutz h2 {
     font-size: 17px;
     font-weight: 800;
     line-height: 22.5px;
@@ -33,7 +33,7 @@
   
 }
 
-.agb h3 , .widerruf h3 {
+.agb h3 , .widerruf h3 , .datenschutz h3  {
     font-size: 15px;
     font-weight: 800;
     line-height: 22.5px;
@@ -41,7 +41,7 @@
     letter-spacing: 0.5px;
 }
 
-.agb p , .widerruf p {
+.agb p , .widerruf p , .datenschutz p {
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.5px;
@@ -77,3 +77,9 @@
 .margin-top{
     margin-top: 50px;
 }
+
+.datenschutz-adresse * {
+  margin: 0;
+  
+}
+

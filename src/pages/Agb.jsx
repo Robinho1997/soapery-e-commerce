@@ -1,8 +1,9 @@
 import React from "react";
-import "../styles/agbAndWiderruf.css";
+import "../styles/agbWiderrufDatenschutz.css";
 import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+
 function Agb() {
   return (
     <div className="agb-page">

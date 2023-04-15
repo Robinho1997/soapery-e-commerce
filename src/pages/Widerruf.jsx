@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/agbAndWiderruf.css";
+import "../styles/agbWiderrufDatenschutz.css";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 
