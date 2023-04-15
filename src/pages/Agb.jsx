@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/agb.css";
+import "../styles/agbAndWiderruf.css";
 import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";

@@ -1,4 +1,4 @@
-.agb-header{
+.agb-header , .widerruf-header{
         text-align: center;
         margin-top: 150px;
         font-size: 32px;
@@ -8,13 +8,22 @@
         color: #212121;  
 }
 
-.agb {
+.widerruf-header-small {
+    text-align: center;
+    font-weight: 500;
+    line-height: 44px;
+    letter-spacing: 3.5px;
+    color: #212121;  
+    font-size: 15px;
+}
+
+.agb , .widerruf {
     margin-inline: 10%;
-    margin-block: 80px;
+    margin-block: 60px;
   
 }
 
-.agb h2 {
+.agb h2 , .widerruf h2 {
     font-size: 17px;
     font-weight: 800;
     line-height: 22.5px;
@@ -24,7 +33,7 @@
   
 }
 
-.agb h3 {
+.agb h3 , .widerruf h3 {
     font-size: 15px;
     font-weight: 800;
     line-height: 22.5px;
@@ -32,7 +41,7 @@
     letter-spacing: 0.5px;
 }
 
-.agb p {
+.agb p , .widerruf p {
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.5px;
@@ -47,14 +56,14 @@
     letter-spacing: 0.5px;
 }
 
-.agb ul li{
+.agb ul li , .widerruf ul li{
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.5px;
 }
 
-.agb ul {
+.agb ul, .widerruf ul {
     list-style: circle;
     display: flex;
     flex-direction: column;
