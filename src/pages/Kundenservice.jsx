@@ -4,6 +4,10 @@ import Footer from "../components/Footer";
 import "../styles/kundenservice.css";
 import { Link } from "react-router-dom";
 function Kundenservice() {
+
+    function sendMessage() {
+        alert("Vielen Dank für Ihre Nachricht!")
+    }
     return(
         <div>
             <Navbar/>
@@ -26,7 +30,7 @@ function Kundenservice() {
                     <input type="text" placeholder="Name..." />
                     <input type="email" placeholder="E-mail..."></input>
                     <textarea placeholder="Nachricht..."/>
-                    <button type="button">Send</button>
+                    <button onClick={sendMessage}>Send</button>
                 </form>
                 </div>
             <Footer/>
