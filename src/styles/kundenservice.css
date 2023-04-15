@@ -1,0 +1,57 @@
+.flex-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.flex-container form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+   gap: 10px;
+   margin-bottom: 40px;
+}
+
+.flex-container form input, .flex-container form textarea, .flex-container form button {
+    padding: 5px;
+    font-family: inherit;
+    border: 1px solid grey;
+}
+
+.flex-container form textarea {
+    height: 150px;
+}
+
+.flex-container form button {
+    background-color: white;
+    cursor: pointer;
+}
+
+.flex-container form button:hover {
+    background-color: rgb(203, 254, 127);
+}
+
+.kundenservice-text {
+    text-align: center;
+    margin-block: 80px;
+}
+
+.kundenservice-text h1 {
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 22.5px;
+    letter-spacing: 0.5px;  
+}
+
+.kundenservice-text p {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+}
+
+.kundenservice-text a {
+    text-decoration: 1.5px underline;
+    text-underline-offset: 5px;
+}
+
