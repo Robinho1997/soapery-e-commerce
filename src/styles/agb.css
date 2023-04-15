@@ -1,0 +1,70 @@
+.agb-header{
+        text-align: center;
+        margin-top: 150px;
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 44px;
+        letter-spacing: 3.5px;
+        color: #212121;  
+}
+
+.agb {
+    margin-inline: 10%;
+    margin-block: 80px;
+  
+}
+
+.agb h2 {
+    font-size: 17px;
+    font-weight: 800;
+    line-height: 22.5px;
+    letter-spacing: 0.5px;
+    text-decoration: 0.1px underline;
+    text-underline-offset: 7px;
+  
+}
+
+.agb h3 {
+    font-size: 15px;
+    font-weight: 800;
+    line-height: 22.5px;
+  
+    letter-spacing: 0.5px;
+}
+
+.agb p {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+}
+
+.agb a {
+    font-weight: bold;
+    margin-top: 0;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 22.5px;
+    letter-spacing: 0.5px;
+}
+
+.agb ul li{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+}
+
+.agb ul {
+    list-style: circle;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.agb-name{
+    margin-bottom: 5px;
+}
+
+.margin-top{
+    margin-top: 50px;
+}
