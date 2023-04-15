@@ -1,25 +1,26 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
     <footer>
       <div className="main-footer">
-        <div>
+        <div className="column-footer">
           <p className="header-footer">SOAPERY</p>
-          <p className="a">SHOP</p>
-          <p className="a">FAQ</p>
-          <p className="a">ABOUT</p>
-          <p className="a">STORES</p>
+          <Link to="/shop" className="a">SHOP</Link>
+          <Link to="/faq" className="a">FAQ</Link>
+          <Link to="/about" className="a">ABOUT</Link>
+          <Link to="/stores" className="a">STORES</Link>
         </div>
-        <div>
+        <div className="column-footer">
           <p className="header-footer">INFO</p>
-          <p className="a">AGB</p>
-          <p className="a">WIDERRUF</p>
-          <p className="a">DATENSCHUTZ</p>
+          <Link to="/agb" className="a">AGB</Link>
+          <Link to="/widerruf" className="a">WIDERRUF</Link>
+          <Link to="/datenschutz" className="a">DATENSCHUTZ</Link>
         </div>
-        <div>
+        <div className="column-footer">
           <p className="header-footer">KONTAKT</p>
-          <p className="a">KUNDENSERVICE</p>
+          <Link to="/kundenservice" className="a">KUNDENSERVICE</Link>
         </div>
         <div>
           <p className="header-footer">ZAHLUNGSARTEN</p>
@@ -44,10 +45,12 @@ function Footer() {
           <img className="dhl-logo" src="https://cdn.shopify.com/s/files/1/0538/7478/6473/files/dhl.png?v=1614936047"/>
         </div>
       </div>
-      <p className="footer-center-bottom">
+      <div className="footer-center-bottom">
+      <p >
         SOAPERY GMBH - COPYRIGHT © 2023 ALL RIGHTS RESERVED
       </p>
-      <p className="footer-center-bottom">IMPRESSUM</p>
+      <Link to="/impressum">IMPRESSUM</Link>
+      </div>
     </footer>
   );
 }

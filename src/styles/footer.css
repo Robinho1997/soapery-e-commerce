@@ -12,26 +12,34 @@
     color: #212121;
 }
 
+.column-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.column-footer a {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 1.6px;
+}
+
 .footer-center-bottom {
     text-align: center;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 1.6px;
+    margin-bottom: 20px;
 }
+
 
 .header-footer {
     font-size: 14px;
     font-weight: bold;
     line-height: 20px;
     letter-spacing: 1.5px;
-
 }
 
-.a {
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 1.6px;
-}
 
 .payment-logos {
     display: flex;

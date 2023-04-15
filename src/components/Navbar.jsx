@@ -4,11 +4,11 @@ import { nanoid } from "nanoid";
 import { Link } from "react-router-dom";
 import { Context } from "../Context";
 import CartItemComponent from "./CartItemComponent";
-// addtoCart soll toggle auf wahr stellen
+
 function Navbar() {
   const { cartItems,toggle,setToggle } = useContext(Context)
   const cartRef = useRef(null);
-// price eigenschaft von allen objekten im cartItems Array addieren
+
 
 function calculateTotalCost() {
   let totalPrice = 0
@@ -80,7 +80,7 @@ function calculateTotalCost() {
           <Link to={"/stores"}>STORES</Link>
         </li>
         <li>
-          <Link to={"/"}>#SOAPERY</Link>
+          <Link to={"/"}>HOME</Link>
         </li>
       </ul>
 
@@ -106,7 +106,7 @@ function calculateTotalCost() {
         ) : (
           <div className="empty-cart-message">
            <p> Dein Einkaufswagen ist aktuell leer.</p>
-            <Link to={"/shop"}>Klicke hier um weiterzushoppen</Link>
+            <Link onClick={toggleSidebar} to={"/shop"}>Klicke hier um weiterzushoppen</Link>
           </div>
         )}
       </div>
