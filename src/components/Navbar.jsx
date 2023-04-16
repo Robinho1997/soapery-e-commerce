@@ -14,7 +14,7 @@ function Navbar() {
     cartItems.map((item) => {
       totalPrice += item.price;
     });
-    return totalPrice;
+    return (Math.round(totalPrice * 100) / 100).toFixed(2);;
   }
 
   const handleCartClick = (event) => {
