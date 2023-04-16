@@ -33,3 +33,14 @@
     letter-spacing: 1.6px;
     margin-inline: 10%;
 }
+
+
+
+@media (max-width:700px) {
+    .about-text {
+        font-size: 20px;
+    }
+    .about-header {
+        font-size: 25px;
+    }
+}

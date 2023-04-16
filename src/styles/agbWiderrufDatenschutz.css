@@ -8,6 +8,12 @@
         color: #212121;  
 }
 
+@media (max-width:700px) {
+    .agb-header , .widerruf-header , .datenschutz-header {
+        font-size: 20px;
+    }
+}
+
 .widerruf-header-small {
     text-align: center;
     font-weight: 500;

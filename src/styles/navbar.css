@@ -56,6 +56,12 @@ a:hover {
     /** text-shadow: 2px 4px 3px rgba(0,0,0,0.3); **/
 }
 
+@media (max-width:800px) {
+  .second-ul {
+    gap: 20px;
+  }
+}
+
 .number-cart-items {
     position: absolute;
     color: black;
@@ -86,14 +92,20 @@ a:hover {
     overflow-y: scroll;
     position: fixed;
     top: 0;
-    right: -100%;
+    right: -200%;
     height: 100vh;
-    width: 400px;
+    max-width: 400px;
     background-color: black;
     color: white;
     transition: ease-in-out  0.5s ;
     padding: 20px;
     z-index: 1000;
+  }
+
+  @media (max-width:700px) {
+    .sidebar-cart-div {
+      width: 50%;
+    }
   }
   
   .sidebar-cart-div.show {

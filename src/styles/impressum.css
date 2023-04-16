@@ -18,6 +18,13 @@
   
 }
 
+@media (max-width:700px) {
+    .impressum-div {
+        font-size: 10px;
+        margin-inline: 10%;
+    }
+}
+
 .small-header {
     font-size: 13px;
     font-weight: 800;

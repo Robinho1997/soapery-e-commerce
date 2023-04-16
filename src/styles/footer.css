@@ -10,6 +10,15 @@
     padding-block: 40px;
     background-color: #F7F7F7;
     color: #212121;
+    
+}
+
+@media (max-width:700px) {
+    .main-footer {
+        flex-direction: column;
+        gap: 20px;
+        padding-inline: 20%;
+    }
 }
 
 .column-footer {
