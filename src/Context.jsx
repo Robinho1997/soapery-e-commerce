@@ -1,30 +1,51 @@
-import React, { createContext, useState } from "react";
-import productData from "./data/productData";
-const Context = createContext()
+import React, { createContext, useEffect, useState } from "react";
+
+const Context = createContext();
 
 function ContextProvider(props) {
-    const [cartItems,setCartItems] = useState([])
-    const [toggle, setToggle] = useState(false);
+  const [isInitiallyFetched, setIsInitiallyFetched] = useState(false);
+  const [cartItems, setCartItems] = useState([]);
+  const [toggle, setToggle] = useState(false);
 
-    function addToCart(item) {
-        setCartItems(prev => [...prev,item])
-        setToggle(!toggle)
-    }
-    
-    function removeFromCart(index) {
-        setCartItems(prevItems => {
-            const newCartItems = [...prevItems]
-            newCartItems.splice(index,1)
-            return newCartItems
-        })
-    }
+  function addToCart(item) {
+    setCartItems((prev) => [...prev, item]);
+    setToggle(!toggle);
+  }
 
-    return (
-        <Context.Provider value={{cartItems,setCartItems,addToCart, removeFromCart, toggle, setToggle}}>
-            {props.children}
-        </Context.Provider>
-    )
+  useEffect(() => {
+    let prev_items = JSON.parse(localStorage.getItem("cart")) || [];
+    setCartItems(prev_items);
+    setIsInitiallyFetched(true);
+  }, []);
+
+  useEffect(() => {
+    if (isInitiallyFetched) {
+      localStorage.setItem("cart", JSON.stringify(cartItems));
+    }
+  }, [cartItems]);
+
+  function removeFromCart(index) {
+    setCartItems((prevItems) => {
+      const newCartItems = [...prevItems];
+      newCartItems.splice(index, 1);
+      return newCartItems;
+    });
+  }
+
+  return (
+    <Context.Provider
+      value={{
+        cartItems,
+        setCartItems,
+        addToCart,
+        removeFromCart,
+        toggle,
+        setToggle,
+      }}
+    >
+      {props.children}
+    </Context.Provider>
+  );
 }
 
-export {ContextProvider, Context}
-
+export { ContextProvider, Context };
