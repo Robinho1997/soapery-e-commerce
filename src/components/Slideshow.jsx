@@ -1,8 +1,6 @@
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 
-
-
 const divStyle = {
   display: "flex",
   alignItems: "center",
@@ -34,9 +32,8 @@ const Slideshow = () => {
         {slideImages.map((slideImage, index) => (
           <div key={index}>
             <div
-              style={{ ...divStyle, backgroundImage:  `url(${slideImage.url})` }}
-            >
-            </div>
+              style={{ ...divStyle, backgroundImage: `url(${slideImage.url})` }}
+            ></div>
           </div>
         ))}
       </Slide>

@@ -37,8 +37,20 @@ const faqData = [
     answer:
       "Nein, die SOAPERY Face Produkte sind nicht komedogen. Das bedeutet, sie lösen keine Unreinheiten aus.",
   },
-  { question: "Wie sind die SOAPERY Produkte aufzubewahren?", answer: "Die SOAPERY Produkte sollten bei 20 bis 30 Grad gelagert werden. Es sollte zudem darauf geachtet werden die Produkte nicht direkt in der Sonne liegen zu lassen." },
-  { question: "Wie lange sind die SOAPERY Produkte haltbar?", answer: "Wir garantieren die Produktqualität für 12 Monate nach dem ersten Öffnen." },
-  { question: "Wo kann ich die SOAPERY Produkte kaufen?", answer: "Die SOAPERY Produkte sind in unserem Online Shop und bei Müller Drogerie in Deutschland, Österreich, der Schweiz, Slowenien, Spanien, Ungarn und Kroatien erhältlich." },
+  {
+    question: "Wie sind die SOAPERY Produkte aufzubewahren?",
+    answer:
+      "Die SOAPERY Produkte sollten bei 20 bis 30 Grad gelagert werden. Es sollte zudem darauf geachtet werden die Produkte nicht direkt in der Sonne liegen zu lassen.",
+  },
+  {
+    question: "Wie lange sind die SOAPERY Produkte haltbar?",
+    answer:
+      "Wir garantieren die Produktqualität für 12 Monate nach dem ersten Öffnen.",
+  },
+  {
+    question: "Wo kann ich die SOAPERY Produkte kaufen?",
+    answer:
+      "Die SOAPERY Produkte sind in unserem Online Shop und bei Müller Drogerie in Deutschland, Österreich, der Schweiz, Slowenien, Spanien, Ungarn und Kroatien erhältlich.",
+  },
 ];
 export default faqData;

@@ -6,17 +6,16 @@ import { Context } from "../Context";
 import CartItemComponent from "./CartItemComponent";
 
 function Navbar() {
-  const { cartItems,toggle,setToggle } = useContext(Context)
+  const { cartItems, toggle, setToggle } = useContext(Context);
   const cartRef = useRef(null);
 
-
-function calculateTotalCost() {
-  let totalPrice = 0
-  cartItems.map(item => {
-    totalPrice += item.price
-  })
-  return totalPrice
-}
+  function calculateTotalCost() {
+    let totalPrice = 0;
+    cartItems.map((item) => {
+      totalPrice += item.price;
+    });
+    return totalPrice;
+  }
 
   const handleCartClick = (event) => {
     if (cartRef.current && !cartRef.current.contains(event.target)) {
@@ -42,7 +41,7 @@ function calculateTotalCost() {
       document.body.style.overflow = "";
     }
   }, [toggle]);
-  const CartElements = cartItems.map((item,index) => {
+  const CartElements = cartItems.map((item, index) => {
     return (
       <CartItemComponent
         key={nanoid()}
@@ -93,20 +92,22 @@ function calculateTotalCost() {
           <div>
             {CartElements}
             <div className="bottom">
-            <p>Summe</p>
-            <p>{calculateTotalCost()}€</p>
-            <p>Versandkosten & Die landesüblichen MwSt. wird abgeführt</p>
-            <p>
-              Glückwunsch, deine Bestellung ist in Deutschland & Österreich{" "}
-              <strong>versandkostenfrei</strong>!
-            </p>
-            <button className="checkout-btn">CHECKOUT</button>
+              <p>Summe</p>
+              <p>{calculateTotalCost()}€</p>
+              <p>Versandkosten & Die landesüblichen MwSt. wird abgeführt</p>
+              <p>
+                Glückwunsch, deine Bestellung ist in Deutschland & Österreich{" "}
+                <strong>versandkostenfrei</strong>!
+              </p>
+              <button className="checkout-btn">CHECKOUT</button>
             </div>
           </div>
         ) : (
           <div className="empty-cart-message">
-           <p> Dein Einkaufswagen ist aktuell leer.</p>
-            <Link onClick={toggleSidebar} to={"/shop"}>Klicke hier um weiterzushoppen</Link>
+            <p> Dein Einkaufswagen ist aktuell leer.</p>
+            <Link onClick={toggleSidebar} to={"/shop"}>
+              Klicke hier um weiterzushoppen
+            </Link>
           </div>
         )}
       </div>

@@ -41,9 +41,7 @@ function Faq() {
     <div>
       <Navbar />
       <h1 className="faq-header">FAQ</h1>
-      <div className="margin-bottom">
-      {FaqElements}
-      </div>
+      <div className="margin-bottom">{FaqElements}</div>
       <Footer />
     </div>
   );

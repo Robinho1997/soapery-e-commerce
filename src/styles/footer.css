@@ -1,16 +1,9 @@
-/**
-*! FOOTER STYLES HERE
-**/
-
-
-
 .main-footer {
     display: flex;
     justify-content: space-evenly;
     padding-block: 40px;
     background-color: #F7F7F7;
     color: #212121;
-    
 }
 
 @media (max-width:700px) {
@@ -41,14 +34,12 @@
     margin-bottom: 20px;
 }
 
-
 .header-footer {
     font-size: 14px;
     font-weight: bold;
     line-height: 20px;
     letter-spacing: 1.5px;
 }
-
 
 .payment-logos {
     display: flex;

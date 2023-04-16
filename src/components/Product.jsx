@@ -4,7 +4,7 @@ import { Context } from "../Context";
 
 function Product(props) {
   const { cartItems, setCartItems, addToCart } = useContext(Context);
- 
+
   return (
     <div className="product">
       <img className="product-img" src={props.img} />

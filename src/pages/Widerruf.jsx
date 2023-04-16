@@ -79,14 +79,20 @@ function Widerruf() {
         </p>
         <ul>
           <li>
-            An SOAPERY GmbH, Musterstraße 1, D-53639 Köngiswinter, info@muster-soapery.de,
-            Deutschland
+            An SOAPERY GmbH, Musterstraße 1, D-53639 Köngiswinter,
+            info@muster-soapery.de, Deutschland
           </li>
-          <li>Hiermit widerrufe(n) ich/wir (*) den von mir/uns (*) abgeschlossenen Vertrag über den Kauf der folgenden Waren (*)/die Erbringung der folgenden Dienstleistung (*)</li>
+          <li>
+            Hiermit widerrufe(n) ich/wir (*) den von mir/uns (*) abgeschlossenen
+            Vertrag über den Kauf der folgenden Waren (*)/die Erbringung der
+            folgenden Dienstleistung (*)
+          </li>
           <li>Bestellt am (*)/erhalten am (*)</li>
           <li>Name des/der Verbraucher(s)</li>
           <li>Anschrift des/der Verbraucher(s)</li>
-          <li>Unterschrift des/der Verbraucher(s) (nur bei Mitteilung auf Papier)</li>
+          <li>
+            Unterschrift des/der Verbraucher(s) (nur bei Mitteilung auf Papier)
+          </li>
           <li>Datum</li>
         </ul>
         <p>(*) Unzutreffendes streichen.</p>

@@ -1,15 +1,19 @@
-.agb-header , .widerruf-header , .datenschutz-header{
-        text-align: center;
-        margin-top: 150px;
-        font-size: 32px;
-        font-weight: 500;
-        line-height: 44px;
-        letter-spacing: 3.5px;
-        color: #212121;  
+.agb-header,
+.widerruf-header,
+.datenschutz-header {
+    text-align: center;
+    margin-top: 150px;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 44px;
+    letter-spacing: 3.5px;
+    color: #212121;
 }
 
 @media (max-width:700px) {
-    .agb-header , .widerruf-header , .datenschutz-header {
+    .agb-header,
+    .widerruf-header,
+    .datenschutz-header {
         font-size: 20px;
     }
 }
@@ -19,35 +23,41 @@
     font-weight: 500;
     line-height: 44px;
     letter-spacing: 3.5px;
-    color: #212121;  
+    color: #212121;
     font-size: 15px;
 }
 
-.agb , .widerruf , .datenschutz {
+.agb,
+.widerruf,
+.datenschutz {
     margin-inline: 10%;
     margin-block: 60px;
-  
+
 }
 
-.agb h2 , .widerruf h2 , .datenschutz h2 {
+.agb h2,
+.widerruf h2,
+.datenschutz h2 {
     font-size: 17px;
     font-weight: 800;
     line-height: 22.5px;
     letter-spacing: 0.5px;
     text-decoration: 0.1px underline;
     text-underline-offset: 7px;
-  
 }
 
-.agb h3 , .widerruf h3 , .datenschutz h3  {
+.agb h3,
+.widerruf h3,
+.datenschutz h3 {
     font-size: 15px;
     font-weight: 800;
     line-height: 22.5px;
-  
     letter-spacing: 0.5px;
 }
 
-.agb p , .widerruf p , .datenschutz p {
+.agb p,
+.widerruf p,
+.datenschutz p {
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.5px;
@@ -62,30 +72,30 @@
     letter-spacing: 0.5px;
 }
 
-.agb ul li , .widerruf ul li{
+.agb ul li,
+.widerruf ul li {
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.5px;
 }
 
-.agb ul, .widerruf ul {
+.agb ul,
+.widerruf ul {
     list-style: circle;
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
-.agb-name{
+.agb-name {
     margin-bottom: 5px;
 }
 
-.margin-top{
+.margin-top {
     margin-top: 50px;
 }
 
 .datenschutz-adresse * {
-  margin: 0;
-  
+    margin: 0;
 }
-
