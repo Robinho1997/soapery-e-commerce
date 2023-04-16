@@ -5,7 +5,7 @@ import Shop from "./pages/Shop";
 import About from "./pages/About";
 import Stores from "./pages/Stores";
 import Soapery from "./pages/Soapery";
-import Faq from "./pages/FAQ";
+import Faq from "./pages/Faq";
 import Agb from "./pages/Agb";
 import Widerruf from "./pages/Widerruf";
 import Datenschutz from "./pages/Datenschutz";
