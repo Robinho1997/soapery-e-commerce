@@ -26,7 +26,7 @@ function App() {
         <Route path="/datenschutz" element={<Datenschutz />} />
         <Route path="/kundenservice" element={<Kundenservice />} />
         <Route path="/impressum" element={<Impressum />} />
-        <Route path={"/shop/:name"} element={<Productpage/>}/>
+        <Route path={"/shop/:name"} element={<Productpage />} />
       </Routes>
     </div>
   );

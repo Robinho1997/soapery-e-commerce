@@ -26,10 +26,12 @@
 .flex-container form button {
     background-color: white;
     cursor: pointer;
+    transition: background-color 1.5s ease-out;
 }
 
 .flex-container form button:hover {
-    background-color: rgb(203, 254, 127);
+    background-color: rgb(167, 231, 71);
+    transition: background-color 1.5s ease-out;
 }
 
 .kundenservice-text {

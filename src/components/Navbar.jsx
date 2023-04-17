@@ -103,7 +103,7 @@ function Navbar() {
                 <p>Versandkosten & Die landesüblichen MwSt. wird abgeführt</p>
                 <p>
                   Glückwunsch, deine Bestellung ist in Deutschland & Österreich
-                  <strong>versandkostenfrei</strong>!
+                  <strong> versandkostenfrei</strong>!
                 </p>
                 <button className="checkout-btn">CHECKOUT</button>
               </div>
@@ -132,7 +132,8 @@ function Navbar() {
                 </p>
                 <p>Shipping & taxes calculated at checkout</p>
                 <p>
-                Order for 29,90 €/39,90€ to get free shipping to Germany/Austria.
+                  Order for 29,90 €/39,90€ to get free shipping to
+                  Germany/Austria.
                 </p>
                 <button className="checkout-btn">CHECKOUT</button>
               </div>
@@ -141,7 +142,7 @@ function Navbar() {
             <div className="empty-cart-message">
               <p> Your cart is currently empty.</p>
               <Link onClick={toggleSidebar} to={"/shop"}>
-              Click here to continue shopping.
+                Click here to continue shopping.
               </Link>
             </div>
           )}

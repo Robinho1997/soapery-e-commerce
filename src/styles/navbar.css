@@ -151,7 +151,6 @@ a:hover {
 }
 
 .right-side-cart-item * {
-
   margin: 0;
 }
 
@@ -174,15 +173,22 @@ a:hover {
   background-color: inherit;
   border: none;
   color: white;
-  text-decoration: 1.4px underline;
-  text-underline-offset: 5px;
   font-family: inherit;
   cursor: pointer;
   text-align: start;
+  transition: color 1.5s ease-out;
+  font-size: 12px;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.trash-icon{
+  font-size: 25px;
 }
 
 .remove-btn:hover {
   color: red;
+  transition:color 1.5s ease-out;
 }
 
 .bottom {
@@ -201,4 +207,10 @@ a:hover {
   padding: 8px;
   margin: 0 auto;
   text-align: center;
+  transition: background-color 1.5s ease-out;
+}
+
+.checkout-btn:hover {
+  background-color: rgb(167, 231, 71);
+  transition: background-color 1.5s ease-out;
 }

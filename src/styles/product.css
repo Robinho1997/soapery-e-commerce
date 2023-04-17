@@ -20,7 +20,7 @@
 .product-grid {
     padding-bottom: 80px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 450px));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 400px));
     justify-content: center;
     gap: 100px;
     margin-inline: 100px;
@@ -75,6 +75,13 @@
     padding-block: 8px;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 1.5s ease-out;
+    border: none;
+}
+
+.product-btn:hover {
+    background-color: rgb(80, 122, 18);
+    transition: background-color 1.5s ease-out;
 }
 
 .header-products {
