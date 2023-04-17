@@ -73,6 +73,9 @@ function Navbar() {
       </ul>
 
       <ul className="second-ul">
+      <li>
+          <Link to={"/"}>HOME</Link>
+        </li>
         <li>
           <Link to={"/shop"}>SHOP</Link>
         </li>
@@ -82,9 +85,7 @@ function Navbar() {
         <li>
           <Link to={"/stores"}>STORES</Link>
         </li>
-        <li>
-          <Link to={"/"}>HOME</Link>
-        </li>
+       
       </ul>
 
       {germanLanguage ? (

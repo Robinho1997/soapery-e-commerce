@@ -8,19 +8,19 @@ const divStyle = {
   backgroundSize: "cover",
   backgroundPosition: "center",
   height: "80vh",
-  opacity: 0.6,
+  opacity: 0.5,
 };
 const slideImages = [
   {
-    url: "https://images.unsplash.com/photo-1454873019514-eae2f086587a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1473&q=80",
+    url: "https://images.unsplash.com/photo-1643123158602-c5e19b5c96ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
     caption: "Slide 1",
   },
   {
-    url: "https://images.unsplash.com/photo-1474625121024-7595bfbc57ac?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1475&q=80",
+    url: "https://images.unsplash.com/photo-1643123158477-0c3f990b299d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
     caption: "Slide 2",
   },
   {
-    url: "https://images.unsplash.com/photo-1551651056-2cb4d5c104be?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+    url: "https://images.unsplash.com/photo-1643123158319-034f6a10aff9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
     caption: "Slide 3",
   },
 ];
