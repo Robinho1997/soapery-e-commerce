@@ -1,16 +1,21 @@
 import React, { useContext } from "react";
 import "../styles/product.css";
 import { Context } from "../Context";
+import { Link } from "react-router-dom";
 
 function Product(props) {
-  const {addToCart, germanLanguage } = useContext(Context);
+  const { addToCart, germanLanguage } = useContext(Context);
 
   return (
     <div className="product">
-      <img className="product-img" src={props.img} />
+      <Link to={`/shop/${props.name}`}>
+        <img className="product-img" src={props.img} />
+      </Link>
       <div className="product-info">
         <div className="product-info-top-section">
-          <p className="product-name">{props.name}</p>
+          <Link className="product-name" to={`/shop/${props.name}`}>
+            {props.name}
+          </Link>
           <p className="product-price">{props.price} €</p>
         </div>
         <p className="product-description">{props.info}</p>

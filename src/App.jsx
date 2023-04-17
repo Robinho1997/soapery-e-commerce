@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Homepage from "./pages/Homepage";
 import { Routes, Route } from "react-router-dom";
 import Shop from "./pages/Shop";
+import Productpage from "./components/ProductPage";
 import About from "./pages/About";
 import Stores from "./pages/Stores";
 import Faq from "./pages/Faq";
@@ -25,6 +26,7 @@ function App() {
         <Route path="/datenschutz" element={<Datenschutz />} />
         <Route path="/kundenservice" element={<Kundenservice />} />
         <Route path="/impressum" element={<Impressum />} />
+        <Route path={"/shop/:name"} element={<Productpage/>}/>
       </Routes>
     </div>
   );
