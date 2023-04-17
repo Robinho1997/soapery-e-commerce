@@ -9,6 +9,7 @@ import { Context } from "../Context";
 
 function Shop() {
   const {germanLanguage} = useContext(Context)
+  
   let ProductElements = productData.map((product) => {
     return (
       <Product

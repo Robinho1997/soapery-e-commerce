@@ -6,11 +6,18 @@ function ContextProvider(props) {
   const [isInitiallyFetched, setIsInitiallyFetched] = useState(false);
   const [cartItems, setCartItems] = useState([]);
   const [toggle, setToggle] = useState(false);
-  const [germanLanguage,setGermanLanguage] = useState(true)
+  const storedLanguage = localStorage.getItem("language");
+  const [germanLanguage, setGermanLanguage] = useState(
+    storedLanguage ? storedLanguage === "true" : true
+  );
 
   function toggleLanguage() {
-    setGermanLanguage(!germanLanguage)
+    setGermanLanguage(!germanLanguage);
   }
+
+  useEffect(() => {
+    localStorage.setItem("language", germanLanguage);
+  }, [germanLanguage]);
 
   function addToCart(item) {
     setCartItems((prev) => [...prev, item]);
@@ -47,7 +54,7 @@ function ContextProvider(props) {
         toggle,
         setToggle,
         germanLanguage,
-        toggleLanguage
+        toggleLanguage,
       }}
     >
       {props.children}
