@@ -6,6 +6,11 @@ function ContextProvider(props) {
   const [isInitiallyFetched, setIsInitiallyFetched] = useState(false);
   const [cartItems, setCartItems] = useState([]);
   const [toggle, setToggle] = useState(false);
+  const [germanLanguage,setGermanLanguage] = useState(true)
+
+  function toggleLanguage() {
+    setGermanLanguage(!germanLanguage)
+  }
 
   function addToCart(item) {
     setCartItems((prev) => [...prev, item]);
@@ -41,6 +46,8 @@ function ContextProvider(props) {
         removeFromCart,
         toggle,
         setToggle,
+        germanLanguage,
+        toggleLanguage
       }}
     >
       {props.children}

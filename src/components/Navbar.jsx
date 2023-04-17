@@ -6,7 +6,7 @@ import { Context } from "../Context";
 import CartItemComponent from "./CartItemComponent";
 
 function Navbar() {
-  const { cartItems, toggle, setToggle } = useContext(Context);
+  const { cartItems, toggle, setToggle, germanLanguage, toggleLanguage} = useContext(Context);
   const cartRef = useRef(null);
 
   function calculateTotalCost() {
@@ -58,7 +58,7 @@ function Navbar() {
   return (
     <nav className="navbar">
       <ul className="first-ul">
-        <li>DE/EN</li>
+        <li className="language-toggle" onClick={toggleLanguage}><span className={germanLanguage ? "strong" : ""}>DE</span>/<span className={germanLanguage ? "" : "strong"}>EN</span></li>
         <li>
           <h1 className="navbar-header">SOAPERY</h1>
         </li>
