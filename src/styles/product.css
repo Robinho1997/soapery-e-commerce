@@ -1,5 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
+.header {
+    color: #212121;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    margin: 0;
+    font-size: 35px;
+    background-color: white;
+    line-height: 43px;
+    letter-spacing: 3.5px;
+}
+
+.shop-header {
+    text-align: center;
+    margin-block: 100px;  
+}
+
+
 .product-grid {
     padding-bottom: 80px;
     display: grid;
@@ -63,7 +80,7 @@
 .header-products {
     color: #212121;
     padding-block: 50px 70px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
     text-align: center;
     margin: 0;
     font-size: 35px;

@@ -92,8 +92,7 @@ function Navbar() {
           <div>
             {CartElements}
             <div className="bottom">
-              <p>Summe</p>
-              <p>{calculateTotalCost()}€</p>
+              <p className="total-cart-price">Summe {calculateTotalCost()}€</p>
               <p>Versandkosten & Die landesüblichen MwSt. wird abgeführt</p>
               <p>
                 Glückwunsch, deine Bestellung ist in Deutschland & Österreich{" "}

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700;800&display=swap');
+
 ul,
 li {
   margin-left: 0;
@@ -5,10 +7,10 @@ li {
 }
 
 li {
-  font-size: 18px;
+  font-size: 23px;
   line-height: 20px;
   letter-spacing: 1px;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 a {
@@ -28,12 +30,15 @@ a:hover {
   background-color: transparent;
   z-index: 1;
   color: #212121;
+
 }
 
 .navbar-header {
   font-size: 37px;
   text-decoration: underline;
   text-underline-offset: 10px;
+  font-family: 'Playfair Display', serif;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.3); 
 }
 
 .navbar ul {
@@ -45,13 +50,15 @@ a:hover {
 .first-ul {
   justify-content: space-between;
   padding: 20px;
+  font-family: 'Playfair Display', serif;
 }
 
 .second-ul {
   justify-content: center;
   gap: 50px;
   font-weight: bold;
-  /** text-shadow: 2px 4px 3px rgba(0,0,0,0.3); **/
+  font-family: 'Playfair Display', serif;
+
 }
 
 @media (max-width:800px) {
@@ -76,6 +83,7 @@ a:hover {
 
 .cart {
   cursor: pointer;
+  font-family: 'Inter', sans-serif;
 }
 
 
@@ -89,7 +97,7 @@ a:hover {
   top: 0;
   right: -200%;
   height: 100vh;
-  max-width: 400px;
+  max-width: 500px;
   background-color: black;
   color: white;
   transition: ease-in-out 0.5s;
@@ -123,6 +131,22 @@ a:hover {
   padding-bottom: 10px;
 }
 
+.right-side-cart-item {
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.right-side-cart-item * {
+
+  margin: 0;
+}
+
+.cart-item-div {
+  margin-block: 50px;
+}
+
 .cart-item-flex {
   display: flex;
   justify-content: flex-start;
@@ -142,13 +166,20 @@ a:hover {
   text-underline-offset: 5px;
   font-family: inherit;
   cursor: pointer;
+  text-align: start;
+}
+
+.remove-btn:hover {
+  color: red;
 }
 
 .bottom {
   border-top: 2px solid white;
+  text-align: start;
   margin-top: 50px;
   padding-bottom: 50px;
 }
+
 
 .checkout-btn {
   background-color: white;

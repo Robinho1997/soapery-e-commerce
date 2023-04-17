@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700;800&display=swap');
+
 
 body {
     box-sizing: border-box;
@@ -21,6 +23,7 @@ body {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, .004);
     letter-spacing: 0.1em;
     font-size: 24px;
+    font-family: 'Playfair Display', serif;
 }
 
 .img-text-presentation-div {

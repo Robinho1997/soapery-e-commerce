@@ -9,7 +9,7 @@ function About() {
       <Navbar />
       <img
         className="about-img"
-        src="https://images.unsplash.com/photo-1563305145-b64e0c2184aa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+        src="https://images.unsplash.com/photo-1647439767291-1fb0e942c1a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1562&q=80"
       />
       <p className="about-header">PROTECT, CARE & ENJOY.</p>
       <p className="about-text">

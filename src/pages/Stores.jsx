@@ -13,10 +13,7 @@ function Stores() {
   return (
     <div className="store-page">
       <Navbar />
-      <img
-        className="store-img"
-        src="https://images.unsplash.com/photo-1562731789-8324cbe28333?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
-      />
+   
       <div className="store-locations-div">
         <button onClick={() => changeToggleValue(setToggleGermany)}>
           DEUTSCHLAND
