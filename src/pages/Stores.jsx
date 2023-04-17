@@ -1,11 +1,13 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import "../styles/stores.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { Context } from "../Context";
 
 function Stores() {
   const [toggleGermany, setToggleGermany] = useState(false);
   const [toggleAustria, setToggleAustria] = useState(false);
+  const {germanLanguage} = useContext(Context)
 
   function changeToggleValue(state) {
     state((prev) => (prev = !prev));
@@ -16,7 +18,7 @@ function Stores() {
    
       <div className="store-locations-div">
         <button onClick={() => changeToggleValue(setToggleGermany)}>
-          DEUTSCHLAND
+          {germanLanguage ? "DEUTSCHLAND" : "GERMANY"}
           {toggleGermany ? (
             <span className="material-symbols-outlined">expand_less</span>
           ) : (
@@ -31,7 +33,7 @@ function Stores() {
         )}
 
         <button onClick={() => changeToggleValue(setToggleAustria)}>
-          ÖSTERREICH
+        {germanLanguage ? "ÖSTERREICH" : "AUSTRIA"}
           {toggleAustria ? (
             <span className="material-symbols-outlined">expand_less</span>
           ) : (

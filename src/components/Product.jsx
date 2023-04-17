@@ -3,7 +3,7 @@ import "../styles/product.css";
 import { Context } from "../Context";
 
 function Product(props) {
-  const { cartItems, setCartItems, addToCart } = useContext(Context);
+  const {addToCart, germanLanguage } = useContext(Context);
 
   return (
     <div className="product">
@@ -15,7 +15,7 @@ function Product(props) {
         </div>
         <p className="product-description">{props.info}</p>
         <button className="product-btn" onClick={() => addToCart(props.object)}>
-          IN DEN EINKAUFSKORB
+          {germanLanguage ? "IN DEN EINKAUFSKORB" : "ADD TO CART"}
         </button>
       </div>
     </div>

@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import { Context } from "../Context";
 
 function Footer() {
+  const { germanLanguage } = useContext(Context);
   return (
     <footer>
       <div className="main-footer">
@@ -20,26 +22,52 @@ function Footer() {
             STORES
           </Link>
         </div>
-        <div className="column-footer">
-          <p className="header-footer">INFO</p>
-          <Link to="/agb" className="a">
-            AGB
-          </Link>
-          <Link to="/widerruf" className="a">
-            WIDERRUF
-          </Link>
-          <Link to="/datenschutz" className="a">
-            DATENSCHUTZ
-          </Link>
-        </div>
-        <div className="column-footer">
-          <p className="header-footer">KONTAKT</p>
-          <Link to="/kundenservice" className="a">
-            KUNDENSERVICE
-          </Link>
-        </div>
+        {germanLanguage ? (
+          <div className="column-footer">
+            <p className="header-footer">INFO</p>
+            <Link to="/agb" className="a">
+              AGB
+            </Link>
+            <Link to="/widerruf" className="a">
+              WIDERRUF
+            </Link>
+            <Link to="/datenschutz" className="a">
+              DATENSCHUTZ
+            </Link>
+          </div>
+        ) : (
+          <div className="column-footer">
+            <p className="header-footer">INFO</p>
+            <Link to="/agb" className="a">
+              TERMS OF SERVICE
+            </Link>
+            <Link to="/widerruf" className="a">
+              REFUND POLICY
+            </Link>
+            <Link to="/datenschutz" className="a">
+              PRIVACY POLICY
+            </Link>
+          </div>
+        )}
+        {germanLanguage ? (
+          <div className="column-footer">
+            <p className="header-footer">KONTAKT</p>
+            <Link to="/kundenservice" className="a">
+              KUNDENSERVICE
+            </Link>
+          </div>
+        ) : (
+          <div className="column-footer">
+            <p className="header-footer">CONTACT</p>
+            <Link to="/kundenservice" className="a">
+              CUSTOMER SERVICE
+            </Link>
+          </div>
+        )}
         <div>
-          <p className="header-footer">ZAHLUNGSARTEN</p>
+          <p className="header-footer">
+            {germanLanguage ? "ZAHLUNGSARTEN" : "PAYMENT METHODS"}
+          </p>
           <div className="payment-logos">
             <div className="pair-logos">
               <img src="https://cdn.shopify.com/s/files/1/0538/7478/6473/files/paypal.png?v=1614936047" />
@@ -56,7 +84,9 @@ function Footer() {
           </div>
         </div>
         <div>
-          <p className="header-footer">VERSAND</p>
+          <p className="header-footer">
+            {germanLanguage ? "VERSAND" : "SHIPPING"}
+          </p>
           <img
             className="dhl-logo"
             src="https://cdn.shopify.com/s/files/1/0538/7478/6473/files/dhl.png?v=1614936047"
@@ -65,7 +95,9 @@ function Footer() {
       </div>
       <div className="footer-center-bottom">
         <p>SOAPERY GMBH - COPYRIGHT © 2023 ALL RIGHTS RESERVED</p>
-        <Link to="/impressum">IMPRESSUM</Link>
+        <Link to="/impressum">
+          {germanLanguage ? "IMPRESSUM" : "LEGAL NOTICE"}
+        </Link>
       </div>
     </footer>
   );

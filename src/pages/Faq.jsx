@@ -1,11 +1,18 @@
-import React, { useState } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import "../styles/faq.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import faqData from "../data/faqData";
+import germanFaqData from "../data/germanFaqData";
+import englishFaqData from "../data/englishFaqData";
+import { Context } from "../Context";
 
 function Faq() {
-  const [faqs, setFaqs] = useState(faqData);
+  const { germanLanguage } = useContext(Context);
+  const [faqs, setFaqs] = useState(germanFaqData);
+  
+  useEffect(() => {
+    setFaqs(germanLanguage ? germanFaqData : englishFaqData);
+  }, [germanLanguage]);
 
   const showAnswer = (index) => {
     setFaqs(
@@ -20,9 +27,9 @@ function Faq() {
       <h3 className="question" onClick={() => showAnswer(index)}>
         {faq.question}
         {faq.isOpen ? (
-          <span class="material-symbols-outlined minus-icon">remove</span>
+          <span className="material-symbols-outlined minus-icon">remove</span>
         ) : (
-          <span class="material-symbols-outlined plus-icon">add</span>
+          <span className="material-symbols-outlined plus-icon">add</span>
         )}
       </h3>
       <p

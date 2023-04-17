@@ -1,9 +1,9 @@
-const faqData = [
+const germanFaqData = [
   {
     question:
       "Was ist das Besondere an den SOAPERY Produkten? Was unterscheidet sie von herkömmlichen Seifenpflegeprodukten?",
     answer:
-      "Die Produkte von SOAPERY sind einzigartig im Hinblick auf ihre Rezeptur, die sich an dem neusten Stand der Wissenschaft orientiert. Es wird auf Stoffe wie Octocrylen, Nanopartikel und synthetische Polymere verzichtet. SOAPERY Produkte fühlen sich durch pflegende Öle und Shea Butter besonders geschmeidig auf der Haut an. Zudem ist das schöne Design ein absoluter Hingucker. So macht sich waschen richtig Spaß! ",
+      "Die Produkte von SOAPERY sind einzigartig im Hinblick auf ihre Rezeptur, die sich an dem neusten Stand der Wissenschaft orientiert. Es wird auf Stoffe wie Octocrylen, Nanopartikel und synthetische Polymere verzichtet. SOAPERY Produkte fühlen sich durch pflegende Öle und Shea Butter besonders geschmeidig auf der Haut an. Zudem ist das schöne Design ein absoluter Hingucker. So macht sich waschen richtig Spaß!",
   },
   {
     question: "Wo werden die SOAPERY Produkte hergestellt?",
@@ -53,4 +53,4 @@ const faqData = [
       "Die SOAPERY Produkte sind in unserem Online Shop und bei Müller Drogerie in Deutschland, Österreich, der Schweiz, Slowenien, Spanien, Ungarn und Kroatien erhältlich.",
   },
 ];
-export default faqData;
+export default germanFaqData;

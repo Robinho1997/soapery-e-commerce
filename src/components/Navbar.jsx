@@ -6,7 +6,8 @@ import { Context } from "../Context";
 import CartItemComponent from "./CartItemComponent";
 
 function Navbar() {
-  const { cartItems, toggle, setToggle, germanLanguage, toggleLanguage} = useContext(Context);
+  const { cartItems, toggle, setToggle, germanLanguage, toggleLanguage } =
+    useContext(Context);
   const cartRef = useRef(null);
 
   function calculateTotalCost() {
@@ -14,7 +15,7 @@ function Navbar() {
     cartItems.map((item) => {
       totalPrice += item.price;
     });
-    return (Math.round(totalPrice * 100) / 100).toFixed(2);;
+    return (Math.round(totalPrice * 100) / 100).toFixed(2);
   }
 
   const handleCartClick = (event) => {
@@ -58,7 +59,10 @@ function Navbar() {
   return (
     <nav className="navbar">
       <ul className="first-ul">
-        <li className="language-toggle" onClick={toggleLanguage}><span className={germanLanguage ? "strong" : ""}>DE</span>/<span className={germanLanguage ? "" : "strong"}>EN</span></li>
+        <li className="language-toggle" onClick={toggleLanguage}>
+          <span className={germanLanguage ? "strong" : ""}>DE</span>/
+          <span className={germanLanguage ? "" : "strong"}>EN</span>
+        </li>
         <li>
           <h1 className="navbar-header">SOAPERY</h1>
         </li>
@@ -83,33 +87,66 @@ function Navbar() {
         </li>
       </ul>
 
-      <div
-        className={toggle ? "sidebar-cart-div show" : "sidebar-cart-div"}
-        ref={cartRef}
-      >
-        <h1 className="header-cart">Dein Einkaufskorb</h1>
-        {cartItems.length > 0 ? (
-          <div>
-            {CartElements}
-            <div className="bottom">
-              <p className="total-cart-price">Summe {calculateTotalCost()}€</p>
-              <p>Versandkosten & Die landesüblichen MwSt. wird abgeführt</p>
-              <p>
-                Glückwunsch, deine Bestellung ist in Deutschland & Österreich{" "}
-                <strong>versandkostenfrei</strong>!
-              </p>
-              <button className="checkout-btn">CHECKOUT</button>
+      {germanLanguage ? (
+        <div
+          className={toggle ? "sidebar-cart-div show" : "sidebar-cart-div"}
+          ref={cartRef}
+        >
+          <h1 className="header-cart">Dein Einkaufskorb</h1>
+          {cartItems.length > 0 ? (
+            <div>
+              {CartElements}
+              <div className="bottom">
+                <p className="total-cart-price">
+                  Summe {calculateTotalCost()}€
+                </p>
+                <p>Versandkosten & Die landesüblichen MwSt. wird abgeführt</p>
+                <p>
+                  Glückwunsch, deine Bestellung ist in Deutschland & Österreich
+                  <strong>versandkostenfrei</strong>!
+                </p>
+                <button className="checkout-btn">CHECKOUT</button>
+              </div>
             </div>
-          </div>
-        ) : (
-          <div className="empty-cart-message">
-            <p> Dein Einkaufswagen ist aktuell leer.</p>
-            <Link onClick={toggleSidebar} to={"/shop"}>
-              Klicke hier um weiterzushoppen
-            </Link>
-          </div>
-        )}
-      </div>
+          ) : (
+            <div className="empty-cart-message">
+              <p> Dein Einkaufswagen ist aktuell leer.</p>
+              <Link onClick={toggleSidebar} to={"/shop"}>
+                Klicke hier um weiterzushoppen
+              </Link>
+            </div>
+          )}
+        </div>
+      ) : (
+        <div
+          className={toggle ? "sidebar-cart-div show" : "sidebar-cart-div"}
+          ref={cartRef}
+        >
+          <h1 className="header-cart">Your Cart</h1>
+          {cartItems.length > 0 ? (
+            <div>
+              {CartElements}
+              <div className="bottom">
+                <p className="total-cart-price">
+                  Total {calculateTotalCost()}€
+                </p>
+                <p>Shipping & taxes calculated at checkout</p>
+                <p>
+                Order for 29,90 €/39,90€ to get free shipping to Germany/Austria.
+                </p>
+                <button className="checkout-btn">CHECKOUT</button>
+              </div>
+            </div>
+          ) : (
+            <div className="empty-cart-message">
+              <p> Your cart is currently empty.</p>
+              <Link onClick={toggleSidebar} to={"/shop"}>
+              Click here to continue shopping.
+              </Link>
+            </div>
+          )}
+        </div>
+      )}
     </nav>
   );
 }
