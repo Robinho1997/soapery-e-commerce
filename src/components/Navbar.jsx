@@ -1,7 +1,7 @@
 import React, { useContext, useState, useRef, useEffect } from "react";
 import "../styles/navbar.css";
 import { nanoid } from "nanoid";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Context } from "../Context";
 import CartItemComponent from "./CartItemComponent";
 
@@ -9,7 +9,7 @@ function Navbar() {
   const { cartItems, toggle, setToggle, germanLanguage, toggleLanguage } =
     useContext(Context);
   const cartRef = useRef(null);
-
+  const navigate = useNavigate();
   const [checkoutBtnValue, setCheckoutBtnValue] = useState("CHECKOUT");
 
   function emptyCart() {
@@ -22,6 +22,7 @@ function Navbar() {
       alert("Thanks for your order!")
     }, 4200);
     setTimeout(() => {
+      navigate("/");
       window.location.reload(true)
     }, 4300);
   }
