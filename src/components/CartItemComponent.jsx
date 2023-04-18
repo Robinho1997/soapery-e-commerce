@@ -8,9 +8,9 @@ function CartItemComponent(props) {
       <div className="cart-item-flex">
         <img className="cart-item-img" src={props.img} />
         <div className="right-side-cart-item">
-          <p>{props.name}</p>
-          <p>{props.price} €</p>
-          <p>{props.info}</p>
+          <p className="name-cart-item">{props.name}</p>
+          <p className="price-cart-item">{props.price} €</p>
+          <p className="info-cart-item">{props.info}</p>
           <button
             onClick={() => removeFromCart(props.index)}
             className="remove-btn"

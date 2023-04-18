@@ -10,6 +10,22 @@ function Navbar() {
     useContext(Context);
   const cartRef = useRef(null);
 
+  const [checkoutBtnValue, setCheckoutBtnValue] = useState("CHECKOUT");
+
+  function emptyCart() {
+    setCheckoutBtnValue("ORDERING...");
+    localStorage.removeItem("cart");
+    setTimeout(() => {
+      setCheckoutBtnValue("CHECKOUT");
+    }, 4000);
+    setTimeout(() => {
+      alert("Thanks for your order!")
+    }, 4200);
+    setTimeout(() => {
+      window.location.reload(true)
+    }, 4300);
+  }
+
   function calculateTotalCost() {
     let totalPrice = 0;
     cartItems.map((item) => {
@@ -73,7 +89,7 @@ function Navbar() {
       </ul>
 
       <ul className="second-ul">
-      <li>
+        <li>
           <Link to={"/"}>HOME</Link>
         </li>
         <li>
@@ -85,7 +101,6 @@ function Navbar() {
         <li>
           <Link to={"/stores"}>STORES</Link>
         </li>
-       
       </ul>
 
       {germanLanguage ? (
@@ -101,12 +116,19 @@ function Navbar() {
                 <p className="total-cart-price">
                   Summe {calculateTotalCost()}€
                 </p>
-                <p>Versandkosten & Die landesüblichen MwSt. wird abgeführt</p>
-                <p>
+                <p className="cart-text">
+                  Versandkosten & Die landesüblichen MwSt. wird abgeführt
+                </p>
+                <p className="cart-text">
                   Glückwunsch, deine Bestellung ist in Deutschland & Österreich
                   <strong> versandkostenfrei</strong>!
                 </p>
-                <button className="checkout-btn">CHECKOUT</button>
+                <button onClick={emptyCart} className="checkout-btn">
+                  {checkoutBtnValue}
+                </button>
+                {checkoutBtnValue === "ORDERING..." && (
+                  <iframe src="https://giphy.com/embed/SsTcO55LJDBsI" width="100%" height="560" frameBorder="0" className="giphy-embed" allowFullScreen></iframe>
+                )}
               </div>
             </div>
           ) : (
@@ -132,11 +154,16 @@ function Navbar() {
                   Total {calculateTotalCost()}€
                 </p>
                 <p>Shipping & taxes calculated at checkout</p>
-                <p>
+      <p>
                   Order for 29,90 €/39,90€ to get free shipping to
                   Germany/Austria.
                 </p>
-                <button className="checkout-btn">CHECKOUT</button>
+                <button onClick={emptyCart} className="checkout-btn">
+                  {checkoutBtnValue}
+                </button>
+                {checkoutBtnValue === "ORDERING..." && (
+                  <iframe src="https://giphy.com/embed/SsTcO55LJDBsI" width="100%" height="560" frameBorder="0" className="giphy-embed" allowFullScreen></iframe>
+                )}
               </div>
             </div>
           ) : (
