@@ -17,7 +17,7 @@ function Stores() {
       <Navbar />
    
       <div className="store-locations-div">
-        <button onClick={() => changeToggleValue(setToggleGermany)}>
+        <button className="germany-stores-btn" onClick={() => changeToggleValue(setToggleGermany)}>
           {germanLanguage ? "DEUTSCHLAND" : "GERMANY"}
           {toggleGermany ? (
             <span className="material-symbols-outlined">expand_less</span>
@@ -26,7 +26,7 @@ function Stores() {
           )}
         </button>
         {toggleGermany && (
-          <div className="store-logos margin-bottom">
+          <div className="store-logos">
             <img src="https://cdn.shopify.com/s/files/1/0538/7478/6473/files/MuellerNebenBluete4c-2622_x45.png?v=1623934595" />
             <img src="https://cdn.shopify.com/s/files/1/0538/7478/6473/files/dm_Logo_Deutschland_x80.png?v=1646906553" />
           </div>

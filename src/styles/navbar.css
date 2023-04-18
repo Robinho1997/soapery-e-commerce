@@ -41,6 +41,15 @@ a:hover {
   text-shadow: 1px 1px 5px rgba(0,0,0,0.3); 
 }
 
+.logo-navbar {
+  width: 100px;
+  font-size: 37px;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  font-family: 'Playfair Display', serif;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.3); 
+}
+
 .navbar ul {
   display: flex;
   list-style: none;
@@ -58,7 +67,6 @@ a:hover {
   gap: 50px;
   font-weight: bold;
   font-family: 'Playfair Display', serif;
-
 }
 
 @media (max-width:800px) {

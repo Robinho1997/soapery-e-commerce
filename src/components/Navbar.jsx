@@ -81,7 +81,7 @@ function Navbar() {
           <span className={germanLanguage ? "" : "strong"}>EN</span>
         </li>
         <li>
-          <h1 className="navbar-header">SOAPERY</h1>
+          <img className="logo-navbar" src="/public/soapery-high-resolution-logo-black-on-transparent-background.png"/>
         </li>
         <li className="cart" onClick={toggleSidebar}>
           <span className="material-symbols-outlined">shopping_bag</span>
